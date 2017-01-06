@@ -42,8 +42,3 @@ function copy_files () {
 
   echo -e $Green'(⚆ ‿ ⚆): The backup finished successfully.';
 }
-
-origin_path=testFiles/origin
-target_path=testFiles/target
-
-copy_files $origin_path $target_path
