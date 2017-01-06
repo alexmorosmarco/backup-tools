@@ -1,10 +1,17 @@
 #!/bin/bash
-
-# $1 = origin_path: due to the cp command way of working if the path has a /
-#   as last char, then the content of the folder will be copied but not the
-#   folder itself.
 #
-# $2 = target_path: the full path is created if it does not exist.
+# Backup tools.
+
+################################################################################
+# Copy all files from origin path to target path. If the target path does not
+# exist it will be created.
+#
+# Arguments:
+#   $1 = origin_path: due to the cp command way of working if the path has a /
+#     as last char, then the content of the folder will be copied but not the
+#     folder itself.
+#   $2 = target_path: the full path is created if it does not exist.
+################################################################################
 function copy_files () {
   local Color_Off='\033[0m'
   local Cyan='\033[0;36m'
